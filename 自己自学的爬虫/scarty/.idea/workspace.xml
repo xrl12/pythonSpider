@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c45df54-f540-443f-b2b6-99a39d190b47" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1afG9UoQZvbdGD7qD0B0Z85wKQC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c45df54-f540-443f-b2b6-99a39d190b47" name="Default Changelist" comment="" />
+      <created>1587119084017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587119084017</updated>
+      <workItem from="1587119087413" duration="2325000" />
+      <workItem from="1587148528098" duration="1130000" />
+      <workItem from="1587208172525" duration="5134000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="779" y="201" key="FileChooserDialogImpl" timestamp="1587215496278">
+      <screen x="65" y="24" width="1853" height="864" />
+    </state>
+    <state x="779" y="201" key="FileChooserDialogImpl/65.24.1853.864@65.24.1853.864" timestamp="1587215496277" />
+    <state x="485" y="78" key="SettingsEditor" timestamp="1587148668563">
+      <screen x="65" y="24" width="1853" height="864" />
+    </state>
+    <state x="485" y="78" key="SettingsEditor/65.24.1853.864@65.24.1853.864" timestamp="1587148668563" />
+  </component>
+</project>

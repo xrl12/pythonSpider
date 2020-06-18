@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>品牌介绍 - 新商盟</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+	<meta http-equiv="expires" content="0" />
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta name="xsm-urls" content="sc=http://dynamic.xinshangmeng.com/scweb/; st=http://center.xinshangmeng.com/st/; login=http://login.xinshangmeng.com/login/; ec=http://sc.xinshangmeng.com:80/eciop/; xsm=http://sc.xinshangmeng.com:80/xsm6/; scskins=http://sc.xinshangmeng.com:80/xsm6/scskins/; ac=http://dynamic.xinshangmeng.com/app/; home=http://home.xinshangmeng.com/home/; res=http://sc.xinshangmeng.com:80/xsm6/res/; upload=http://sc.xinshangmeng.com:80/xsm6/upload/; eb=http://dynamic.xinshangmeng.com/ebweb/; current=http://dynamic.xinshangmeng.com:80/scweb/" />
+	<meta name="xsm-user" content="name=杨洋; id=1151110100130920; comId=11511101; type=2210; orgCode=11511101; refId=; refType=" />
+	<link  href="http://sc.xinshangmeng.com:80/xsm6/res/global/header/iop-5246485e97cadc53.css" type="text/css" rel="stylesheet" />
+	<link  href="http://sc.xinshangmeng.com:80/xsm6/res/global/industry-message/main-9019c6c244c630f8.css" type="text/css" rel="stylesheet" />
+	<link  href="http://sc.xinshangmeng.com:80/xsm6/res/sc/brand/main-c9f9cfaad3ac12ca.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="http://sc.xinshangmeng.com:80/xsm6/res/global/common/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://sc.xinshangmeng.com:80/xsm6/res/global/common/lodash_backbone.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://sc.xinshangmeng.com:80/xsm6/res/global/header/iop-11f2a9baeb3c1761.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://sc.xinshangmeng.com:80/xsm6/res/global/uba/uba-e18a4a2a260ac9a2.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://sc.xinshangmeng.com:80/xsm6/res/global/common/layer/layer.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://sc.xinshangmeng.com:80/xsm6/res/global/industry-message/main-b9c8c27170070054.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://sc.xinshangmeng.com:80/xsm6/res/sc/brand/main-43dc9cc44f798d44.js" charset="utf-8"></script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+<style id="css-iop-global">
+* { margin: 0; padding: 0; }
+body { font: 14px/1.7 arial, simsun, sans-serif; color: #333; }
+.iop-footer {
+    width: 990px; margin: 10px auto; padding: 10px 0 0 0; border-top: 1px solid #eee; text-align: center; font: 12px/1.7 arial, simsun, sans-serif; color: #999; }
+.iop-footer i { padding: 0 5px; font-style: normal; color: #eee; }
+</style>
+
+
+
+
+
+
+
+
+
+
+<div class="iop-header">
+	<div class="header-content">
+		<div class="welcome"><span class="J_header_user_name">尊敬的新商盟用户</span>，欢迎来到中烟卷烟订货商务平台！</div>
+		<ul class="iop-head-nav">
+			<li class="iop-head-nav-item"><a class="nav-label i-home" href="http://home.xinshangmeng.com/home/index.htm?v=1586427684425">首页</a></li>
+			<li class="iop-head-nav-item iop-head-nav-item-message xsm-message">
+				<a class="nav-label i-message" href="http://dynamic.xinshangmeng.com/scweb/mailForIOP/mailInBox.htm">消息</a>
+				<div class="iop-head-unread-message-container hide"></div>
+			</li>
+			<li class="iop-head-nav-item iop-head-nav-item-message industry-service hide">
+				<a class="nav-label i-message" href="http://dynamic.xinshangmeng.com/ebweb/iop/industryService/inBox.htm">产品服务</a>
+				<div class="iop-head-unread-message-container hide"></div>
+			</li>
+			<li class="iop-head-nav-item"><a class="nav-label i-help" href="http://dynamic.xinshangmeng.com/scweb/main/helpIOP.htm">帮助</a></li>
+			<li class="iop-head-nav-item"><a class="nav-label i-person" href="http://center.xinshangmeng.com/st/member/user/userInfo.htm">我的新商盟</a></li>
+			<li class="iop-head-nav-item"><a class="nav-label i-exit" id="logout_btn">退出</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="iop-contenter">
+	<div id="qd-banner" class="top">
+		<a id="qd-logo" href="http://home.xinshangmeng.com/home/index.htm?v=1586427684425"></a>
+	</div>
+</div>
+
+<div id="qd-header-bottom">
+<div class="iop-contenter">
+	<div class="left">
+		<div id="app-container" class="app-container">
+			<div class="app-menu">快速通道</div>
+			<ul id="app-list" class="app-list"></ul>
+		</div>
+	</div>
+	<div class="right">
+		<div class="nav">
+			<a class="nav-order" href="http://sc.xinshangmeng.com:80/eciop/orderForCC/cgtListForCC.htm?zone=11511101">卷烟订货<span class="hot"></span></a>
+			<a class="nav-brand" href="http://dynamic.xinshangmeng.com/scweb/brand/index.htm">品牌介绍</a>
+			<a class="nav-appcenter" href="http://home.xinshangmeng.com/home/appcenter/index.htm">我的应用</a>
+
+
+
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main-container">
+	<div id="loading-tip">数据加载中，请稍候...</div>
+	<div class="brand-nav"></div>
+	<div class="index-page-container"></div>
+	<div class="group-page-container">
+		<div class="cmd-container"></div>
+		<div class="cgt-list-container"></div>
+	</div>
+	<div class="cgt-page-container"></div>
+</div>
+
+<script type="text/template-undescore" id="tpl-index-page">
+<div class="index-page-search-box">
+	<input type="text" class="search-condition" placeholder="工业公司、品牌名称">
+	<button class="btn-search">搜索</button>
+</div>
+<div class="tip-no-search-result" style="display:none">
+	未查询到满足条件的数据，您可以<a class="clear-search-result">清空</a>查询条件后重试。
+</div>
+<ul class="index-page-group-list">
+{{ _.each(data, function (group, groupName) { }}
+	<li class="index-page-group-item" data-group-name="{{- groupName }}">
+		<i class="group-brand group-brand-{{- group.groupId }}"></i>
+		<div class="index-page-group-name">{{- groupName }}</div>
+		<ul class="index-page-group-brand-list">
+		{{
+			var brands = _.map(group.brands, function (cgts, name) { return {name: name, size: cgts.length} })
+			_.each(_.sortByOrder(brands, 'size').reverse().slice(0, 3), function (brand) {
+		}}
+			<li class="index-page-group-brand-item" data-brand-name="{{- brand.name }}">{{- brand.name }}</li>
+		{{ }); }}
+		</ul>
+	</li>
+{{ }); }}
+</ul>
+</script>
+
+<script type="text/template-undescore" id="tpl-cgt-sort-cmd-list">
+<ul class="sort-cmds">
+	<li class="sort-cmd" data-attr="PRICE">批发价</li>
+	<li class="sort-cmd" data-attr="TAR_VAL">焦油含量</li>
+</ul>
+</script>
+
+<script type="text/template-undescore" id="tpl-cgt-page">
+{{ var cgt = data; var mfrId = cgt.get('MFR_ID'); var xsmFileVersion = '2020032800'; }}
+<div class="cgt-image-container">
+	<div class="main-image-container">
+		<img title="{{= cgt.get('CGT_NAME') }}" class="main-image" src="{{= cgt.image_url + '_middle_left.png?v=' + xsmFileVersion }}">
+	</div>
+	<ul class="cgt-images">
+		<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_face.png?v=' + xsmFileVersion }}"></li>
+		<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_rear.png?v=' + xsmFileVersion }}"></li>
+		<li title="点击查看大图" class="active"><img src="{{= cgt.image_url + '_middle_left.png?v=' + xsmFileVersion }}"></li>
+		<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_right.png?v=' + xsmFileVersion }}"></li>
+		<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_body.png?v=' + xsmFileVersion }}"></li>
+		<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_cig.png?v=' + xsmFileVersion }}"></li>
+	</ul>
+</div>
+
+<div class="cgt-main-info">
+	<h2>{{= cgt.get('CGT_NAME') }}</h2>
+	<div class="cgt-prop-main">
+		<p><span class="key">建议零售价：</span>&yen;{{= cgt.get('RTL_PRICE') }}	<span style="padding-left: 210px;font-weight: bold;color: #999;">卷烟信息仅供参考，具体以实际卷烟为准</span></p>
+
+		<p><span class="key">批发价：</span><span class="price">&yen;{{= cgt.get('PRICE') }}</span></p>
+
+	</div>
+	<ul class="cgt-prop-list">
+		<li><span class="key">条码：</span>{{= cgt.get('CGT_CARTON_CODE') }}</li>
+		<li><span class="key">盒码：</span>{{= cgt.get('CGT_PACKET_CODE') }}</li>
+		<li><span class="key">卷烟类型：</span>{{= cgt.get('CGT_TYPE_NAME') }}</li>
+		<li><span class="key">焦油量：</span>{{= cgt.get('TAR_VAL') ? (cgt.get('TAR_VAL') + 'mg') : '暂无数据' }}</li>
+		<li><span class="key">烟气烟碱量：</span>{{= cgt.get('GAS_NICOTINE') ? (cgt.get('GAS_NICOTINE') + 'mg') : '暂无数据' }}</li>
+		<li><span class="key">一氧化碳量：</span>{{= cgt.get('CO_CONT') ? (cgt.get('CO_CONT') + 'mg') : '暂无数据' }}</li>
+		<li><span class="key">主体颜色：</span>{{= cgt.get('COLOR') }}</li>
+		<li><span class="key">滤嘴颜色：</span>{{= cgt.get('FILTER_COLOR') }}</li>
+		
+		<li><span class="key">包装形式：</span>{{= cgt.get('PACK_KIND') }}</li>
+	</ul>
+</div>
+{{ if (mfrId == '20370001'){ }}  
+	<div class="product-desc">
+		<div class="head">
+			<ul>
+				<li class="active"><a data-target="#product-detail">产品特点</a></li>
+				<li><a data-target="#product-comments">累计评价<span class="rate-num">0</span></a></li>
+				<li><a data-target="#product-comment-submit">立即评价</a></li>
+			</ul>
+		</div>
+		<div class="body">
+			<div class="title" id="product-detail"><span class="label">产品特点</span></div>
+			<div class="desc">
+				{{- cgt.attributes.DESC || '暂无产品特点' }}
+			</div>
+			<div class="title" id="product-comments"><span class="label">产品评价</span></div>
+			<div class="rate">
+				<div class="score-container">
+					<span class="score-bar"><span class="score-tip">0</span></span>
+				</div>
+				<div class="pair">
+					<div class="key">产品吸味：</div>
+					<div class="val">
+						<span class="stars-container score-flavor"></span>平均<em>0</em>
+					</div>
+				</div>
+				<div class="pair">
+					<div class="key">产品包装：</div>
+					<div class="val">
+						<span class="stars-container score-pack"></span>平均<em>0</em>
+					</div>
+				</div>
+				<div class="pair">
+					<div class="key">喜好程度：</div>
+					<div class="val">
+						<span class="stars-container score-favor"></span>平均<em>0</em>
+					</div>
+				</div>
+				<div>共<em class="score-qty">0</em>人评价</div>
+			</div>
+			<div class="comments">
+				正在查询卷烟评论数据....
+			</div>
+			<div id="product-comment-submit" class="title"><span class="label">我的评价</span></div>
+			<div class="my-comment">
+				<div class="content">
+					<div class="pair">
+						<div class="key">产品吸味：</div>
+						<div class="val">
+							<span class="stars-container rate-flavor">
+								<span class="stars-value"></span>
+							</span>
+						</div>
+					</div>
+					<div class="pair">
+						<div class="key">产品包装：</div>
+						<div class="val">
+							<span class="stars-container rate-pack">
+								<span class="stars-value"></span>
+							</span>
+						</div>
+					</div>
+					<div class="pair">
+						<div class="key">喜好程度：</div>
+						<div class="val">
+							<span class="stars-container rate-favor">
+								<span class="stars-value"></span>
+							</span>
+						</div>
+					</div>
+					<div class="pair">
+						<div class="key">评论产品：</div>
+						<div class="val"><textarea class="rate-comment" maxlength="500"></textarea><span class="tip">5-500字</span></div>
+					</div>
+				</div>
+				<div class="cmd">
+					<a class="btn-rate-submit">提交评价</a>
+				</div>
+			</div>
+		</div>
+	</div>
+{{ } }}
+
+</script>
+
+<script type="text/template-undescore" id="tpl-cgt-comments">
+{{
+	var currentPageNum = data.pageNum,
+		totalPageNum = Math.ceil(data.total / data.pageSize),
+		isFirstPage = currentPageNum === 1,
+		isLastPage = currentPageNum === totalPageNum;
+}}
+<ul class="comment-list">
+{{ _.each(data.commentList, function (comment) { }}
+	<li>
+		<div class="user">
+			<div class="user-name">{{- comment.USER_NAME }}</div>
+			<div class="user-city">{{- comment.COM_SHORT }}</div>
+		</div>
+		<div class="content">{{- comment.CONTENT }}</div>
+		<div class="time">{{- _.xsm.formatTime(comment.COMMENT_TIME) }}</div>
+	</li>
+{{ }); }}
+</ul>
+{{ if (totalPageNum > 1) { }}
+<ul class="page-nav-list">
+	<li class="page{{= isFirstPage ? ' disabled' : ''}}" data-num="1">第一页</li>
+	<li class="page{{= isFirstPage ? ' disabled' : ''}}" data-num="{{= currentPageNum - 1 }}">上一页</li>
+	{{
+		var page,
+			startPageNum = Math.max(1, currentPageNum - 5),
+			endPageNum = Math.min(currentPageNum + 5, totalPageNum);
+		for (page = startPageNum; page <= endPageNum; page++) {
+	}}
+	<li data-num="{{=page}}" class="{{=page === currentPageNum ? 'page-active' : 'page'}}">{{=page}}</li>
+	{{ } }}
+	<li class="page{{= isLastPage ? ' disabled' : ''}}" data-num="{{= currentPageNum + 1 }}">下一页</li>
+	<li class="page{{= isLastPage ? ' disabled' : ''}}" data-num="{{= totalPageNum }}">最后一页</li>
+</ul>
+{{ } }}
+</script>
+
+<script type="text/template-undescore" id="tpl-cgt-nav-bar">
+<div class="index-container">
+	<div class="index-title">品牌介绍</div>
+</div>
+<div class="group-container{{= data.active.group ? '' : ' no-active' }}">
+<div class="group-title">{{= data.active.group || '请选择' }}<i></i></div>
+	<ul class="group-list">
+	{{ _.each(data.groups, function (group, groupName) { }}
+		<li class="group-item{{= groupName === data.active.group ? ' active' : ''}}">{{= groupName }}</li>
+	{{ }) }}
+	</ul>
+</div>
+{{ if (data.active.group) { }}
+<div class="brand-container{{= data.active.brand ? '' : ' no-active'}}">
+<div class="brand-title">{{= data.active.brand || '请选择' }}<i></i></div>
+<ul class="brand-list">
+{{ _.each(data.groups[data.active.group].brands, function (brand, brandName) { }}
+	<li class="brand-item{{= brandName === data.active.brand ? ' active' : ''}}">{{= brandName }}</li>
+{{ }) }}
+</ul>
+</div>
+	{{ if (data.active.brand) { }}
+	<div class="cgt-container{{= data.active.cgt ? '' : ' no-active'}}">
+	<div class="cgt-title">{{= data.active.cgt || '请选择' }}<i></i></div>
+	<ul class="cgt-list">
+	{{ _.each(data.groups[data.active.group].brands[data.active.brand], function (cgt) { }}
+		<li title="{{= cgt.attributes.CGT_NAME }}" data-id="{{= cgt.attributes.N_CGT_CODE }}" class="cgt-item{{= cgt.attributes.CGT_NAME === data.active.cgt ? ' active' : ''}}">{{= cgt.attributes.CGT_NAME }}</li>
+	{{ }) }}
+	</ul>
+	</div>
+	{{ }/* end if */ }}
+{{ }/* end if */ }}
+</script>
+
+<script type="text/template-undescore" id="tpl-cgt-list">
+<ul class="mfr-cgt-list">
+	{{ _.each(data, function (cgt) { }}
+	{{  var xsmFileVersion = '2020032800'; }}
+	<li class="mfr-cgt-item" data-n-cgt-code="{{= cgt.get('N_CGT_CODE') }}">
+		<img title="{{= cgt.get('CGT_NAME') }} - 点击查看更多信息" class="main-image" src="{{= cgt.image_url + '_middle_face.png?v=' + xsmFileVersion }}" alt="{{= cgt.get('CGT_NAME') }}">
+		<ul class="cgt-images">
+			<li title="点击查看大图" class="active"><img src="{{= cgt.image_url + '_middle_face.png?v=' + xsmFileVersion }}"></li>
+			<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_rear.png?v=' + xsmFileVersion }}"></li>
+			<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_left.png?v=' + xsmFileVersion }}"></li>
+			<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_right.png?v=' + xsmFileVersion }}"></li>
+			<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_body.png?v=' + xsmFileVersion }}"></li>
+			<li title="点击查看大图"><img src="{{= cgt.image_url + '_middle_cig.png?v=' + xsmFileVersion }}"></li>
+		</ul>
+		<div class="cgt-info">
+			<div class="name">{{= cgt.get('CGT_NAME') }}</div>
+			<div>
+				&yen;<span class="price" title="批发价">{{= cgt.get('PRICE') }}</span>
+				<span class="tar" title="焦油含量">{{= cgt.get('TAR_VAL') }}</span>mg
+			</div>
+		</div>
+	</li>
+{{ }); }}
+</ul>
+</script>
+
+<style>
+	.footer {
+		font: 12px/1.7 arial, simsun, sans-serif;
+		width: 100%;
+		margin: 30px auto 0;
+		position: relative;
+		clear: both;
+		top: 10px;
+		z-index: -100;
+		padding-top: 10px;
+		color: #999;
+		height: 65px;
+		line-height: 1.5;
+		text-align: center;
+		letter-spacing: 1px;
+		border-top: 1px solid #eee;
+	}
+</style>
+<div class="footer">
+	<div>京ICP备12015701号-3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>本网站含有烟草内容，未成年谢绝访问</b></div>
+	<div>Copyright 2010-<span class="copyright-end-time"></span> www.xinshangmeng.com All Right Reserved</div>
+	<div>中烟商务物流有限责任公司 版权所有</div>
+</div>
+<script type="text/javascript">
+	(function () {
+		var date = new Date()
+		$('.copyright-end-time').text(date.getFullYear())
+	})()
+</script>
+<script type="text/javascript" src="http://sc.xinshangmeng.com:80/xsm6/Scripts/baiduHM.js?v=20130425" id="beacon"></script>
+</body>
+
+</html>

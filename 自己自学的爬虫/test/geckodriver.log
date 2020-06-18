@@ -1,0 +1,15 @@
+1585983686129	geckodriver	INFO	Listening on 127.0.0.1:42715
+1585983686205	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.CLPMwuTEkZfL
+1585983686205	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1585983686237	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35417
+1585983689430	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1585983693509	Marionette	INFO	Listening on port 35417
+1585983693699	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585983697096	Marionette	INFO	Ceased listening
+1585984818620	geckodriver	INFO	Listening on 127.0.0.1:40387
+1585984819672	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.vIDwR6pAzc69
+1585984819674	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1585984819683	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38641
+1585984821400	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1585984823637	Marionette	INFO	Listening on port 38641
+1585984823782	Marionette	WARN	TLS certificate errors will be ignored for this session

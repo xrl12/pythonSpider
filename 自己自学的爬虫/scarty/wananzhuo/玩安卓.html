@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>玩Android - wanandroid.com - 我的收藏</title>
+
+<meta name="baidu-site-verification" content="AjVAHSzyrE" />
+<meta name="author" content="lmj">
+<meta data-vue-meta="true" data-vmid="keywords" name="keywords" content="玩Android,学Android,wanandroid,xueandroid,Android知识体系,Android开发工具,自定义View"/>
+<meta data-vue-meta="true" data-vmid="description" name="description" content="玩Android是一个每日推荐20~30篇Android优质文章的站点，提供Android常用工具和常用网站，并以知识体系的形式展现所有的文章分类。"/>
+
+<link rel="shortcut icon" href="/resources/image/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/jquery.harame.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/pc/dialog.css?v=4" />
+<link rel="stylesheet" type="text/css" href="/resources/css/pc/common.css?v=13" />
+<link rel="stylesheet" type="text/css" href="/resources/css/pc/header.css?v=4" />
+<!-- jieri -->
+<link rel="stylesheet" type="text/css" href="/resources/css/pc/surprise.css?v=1" />
+<!-- -->
+<script type="text/javascript" src="/resources/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/resources/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.harame.js"></script>
+<script type="text/javascript" src="/resources/js/pc/common.js?v=4"></script>
+
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+<script>
+
+ /* (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6857356622430344",
+    enable_page_level_ads: true
+ }); */
+</script>
+<script type="text/javascript">
+	var basepath = "/";
+	var _debug = true;
+</script>
+<script type="text/javascript">
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?90501e13a75bb5eb3d067166e8d2cad8";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<span style="display: none;" id="basepath">/</span>
+
+<link rel="stylesheet" type="text/css" href="/resources/css/pc/collect.css?v=2" />
+
+
+</head>
+<body>
+<div class="e">
+    <!-- header -->
+    
+
+
+<head>
+	<!-- <style type="text/css">
+		html {filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%);}
+	</style> -->
+</head>
+<div class="header">
+	<div>
+	    <div class="logo">
+	    		<a href="http://www.wanandroid.com">
+	    			<img id="logo_img" src="/resources/image/pc/logo.png" width="68px" height="50px"  alt="wan android" />
+	    		</a>
+	    	</div>
+	    <div class="nav">
+	        <ul>
+	            <li id="index"><a href="/index">首页</a></li>
+	            	<li id="userArticle"><a href="/user_article">广场</a></li> 
+	            <li id="navi"><a href="/navi">导航</a></li>
+	            <li id="wenda"><a href="/wenda">问答</a></li>
+	            	<li id="hierarchy"><a href="/tree">体系</a></li>
+	            <li id="projectIndex"><a href="/projectindex">项目</a></li> 
+	            <li id="wxarticle"><a href="/wxarticle">公众号</a></li>
+	            <li id="project"><a href="/project">项目分类</a></li> 
+	           
+	            <li id="tools"><a href="/tools">工具</a></li>
+	            
+	            
+	            		<li id="collect"><a href="/lg/collect">收藏</a></li>
+	            
+	            
+	        </ul>
+	    </div>
+	    <div class="nav_login">
+	        <ul class="loginNav" style="display:none;">
+	            <li><a onclick="showLoginDialog()">登录</a></li>
+	            <li>·</li>
+	            <li><a onclick="showRegisterDialog()">注册</a></li>
+	        </ul>
+	        
+	        <ul class="userNav" >
+	            <li>
+	            		<span class="account"><a href="/user/lg/index">mrxu</a>
+	            		</span>
+	            		<div class="user_opt_div">
+	            			<ul id="userOptNav">
+	            				
+	            				<li><a href="/user/lg/index">用户中心</a></li>
+	            				<li><a href="/user/logout">退出登录</a></li>
+	            			</ul>
+	            		</div>
+	            </li>
+	        </ul>
+	        
+	        
+		        <div style="float: right;height: 60px;">
+		        		<a target="_blank" href="/message/lg/history/list/1" style="margin-top: 10px;width: 24px;" class="collect_icon"  ></a>
+		        </div>
+		   
+	    </div>
+	  
+    
+	</div>
+</div>
+<div class="cb"></div>
+
+
+<div class="dialog_div login_dialog" id="loginDialog">
+    <h2 class="title"><span>登录</span><b class="closed"></b></h2>
+    <div>
+        <input class="normal_input" type="text" name="username" placeholder="请输入用户名" />
+        <input class="normal_input" type="password" name="password" placeholder="请输入密码" />
+        <p class="ofh"><span class="toRegisterDialog" onclick="showRegister()">去注册</span></p>
+        <p class="warn"></p>
+        <p class="opt_p">
+        		<span class="btn save">登录</span>
+        	</p>
+    </div>
+</div>
+
+<div class="dialog_div login_dialog" id="registerDialog">
+    <h2 class="title"><span>注册</span><b class="closed"></b></h2>
+    <div>
+        <input class="normal_input" type="text" name="username" placeholder="请输入用户名" />
+        <input class="normal_input" type="password" name="password" placeholder="请输入密码" />
+        <input class="normal_input" type="password" name="repassword" placeholder="请输入确认密码" />
+        <p class="ofh"><span class="toLoginDialog" onclick="showLogin()">去登录</span></p>
+        <p class="warn"></p>
+        <p class="opt_p">
+        		<span class="btn save">注册</span>
+        	</p>
+    </div>
+</div>
+<script type="text/javascript">
+function showLogin(){
+	$("#registerDialog").harameDialog("close");
+	$("#loginDialog").harameDialog("open");
+}
+function showRegister(){
+    $("#loginDialog").harameDialog("close");
+	$("#registerDialog").harameDialog("open");
+}
+
+$(document).ready(function(){
+	$("#loginDialog, #registerDialog").harameDialog({
+	    closedOnClickOverlay: false,
+	    closedSelector: ".closed, .btn.disabled"
+	});
+	$("#loginDialog input[name='password']").keyup(function(){
+		if(13==event.which || 13==event.keyCode){
+			$("#loginDialog .save").trigger("click");
+		}
+	});
+	$("#registerDialog input[name='repassword']").keyup(function(){
+		if(13==event.which || 13==event.keyCode){
+			$("#registerDialog .save").trigger("click");
+		}
+	});
+	$("#loginDialog .save").click(function(){
+		var $dom = $("#loginDialog");
+		var username = $.trim($dom.find("input[name='username']").val());
+		var password = $dom.find("input[name='password']").val();
+		
+		if( username.length<3){
+			$dom.find("input[name='username']").focus();
+			$dom.find(".warn").html("用户名至少 3 位");
+			return false;
+		}
+		if(password.length < 6){
+			$dom.find("input[name='password']").focus();
+			$dom.find(".warn").html("密码至少 6 位");
+			return false;
+		}
+		$.ajax({
+	          url: basepath+"user/login",
+	          type:"post",
+	          data:{
+        	  		username: username,
+        	  		password: password
+	          		},
+	          success: function (results) {
+	              if(0 != results.errorCode){
+	            	  $dom.find(".warn").html(results.errorMsg);
+	            		return;
+	              }
+	              $dom.harameDialog("close");
+	              $(".loginNav").hide();
+	              if(results.data.type == 1){
+	            	  	$("#tools").after('<li id="editor"><a href="/admin/bg/">添加文章</a></li>');
+	            	  	$("#userOptNav").prepend('<li><a href="/admin/bg/">后台管理</a></li>');
+	              }
+	              $("#tools").after('<li id="collect"><a href="/lg/collect">我的收藏</a></li>');
+	              if(6 < results.data.username.length){
+	            	  	$(".userNav span").html(results.data.username.substring(0,6)+"...");
+	              }else{
+	            	  	$(".userNav span").html(results.data.username);
+	              }
+	              $(".userNav").show();
+	              //收藏同步
+	              //var collectArr = results.data.collectIds;
+	              //global.collectflag = true;
+	             // if(global.callbackSuccess){
+		          //    global.callbackSuccess();
+	             // }
+	              //collectInStep($(".listArticle .collect"), "artid", collectArr);
+	              //window.location.href = "/index";
+	              location.reload();      
+	          }, 
+	          error:function(){
+	        	  	$dom.find(".warn").html("网络异常");
+	          }
+	      });
+		
+	});
+	
+	$("#registerDialog .save").click(function(){
+		var $dom = $("#registerDialog");
+		var username = $.trim($dom.find("input[name='username']").val());
+		var password = $dom.find("input[name='password']").val();
+		var repassword = $dom.find("input[name='repassword']").val();
+		if( 3 > username.length){
+			$dom.find("input[name='username']").focus();
+			$dom.find(".warn").html("用户名最少3位");
+			return false;
+		}
+		if( 50 < username.length){
+			$dom.find("input[name='username']").focus();
+			$dom.find(".warn").html("用户名不超过50位");
+			return false;
+		}
+		if(password.length < 6){
+			$dom.find("input[name='password']").focus();
+			$dom.find(".warn").html("密码至少 6 位");
+			return false;
+		}
+		if(password != repassword){
+			$dom.find("input[name='repassword']").focus();
+			$dom.find(".warn").html("确认密码与密码不符");
+			return false;
+		}
+		
+		$.ajax({
+	          url: basepath+"user/register",
+	          type:"post",
+	          data:{
+	        	  	username: username,
+      	  		password: password,
+      	  		repassword: repassword
+	          		},
+	          success: function (results) {
+	              if(0 != results.errorCode){
+	            	  	$dom.find(".warn").html(results.errorMsg);
+	            		return;
+	              }
+	              $dom.harameDialog("close");
+	              $(".loginNav").hide();
+	              if(results.data.type == 1){
+	            	  	$("#tools").after('<li id="editor"><a href="/admin/bg/">添加文章</a></li>');
+	            	  	$("#userOptNav").prepend('<li><a href="/admin/bg/">后台管理</a></li>');
+	              }
+	              $("#tools").after('<li id="collect"><a href="/lg/collect">我的收藏</a></li>');
+	              if(6 < results.data.username.length){
+	            	  	$(".userNav span").html(results.data.username.substring(0,6)+"...");
+	              }else{
+	            	  	$(".userNav span").html(results.data.username);
+	              }
+	              $(".userNav").show();
+	            //收藏同步
+	             // var collectArr = results.data.collectIds;
+	              //collectInStep($(".listArticle .collect"), "artid", collectArr);
+	             // global.collectflag = true;
+	              //window.location.href = "/index";
+	              location.reload();      
+	          }, 
+	          error:function(){
+	        	  	$dom.find(".warn").html("网络异常");
+	          }
+	      });
+		
+	});
+});
+</script>
+
+
+<div class="login_dialog dialog_div" id="wxDialog">
+    <h2 class="title"><span>解锁回答区域</span><b class="closed"></b></h2>
+            
+           	<div style="text-align: center;margin: 0px auto 10px;">
+	            <img src="/resources/image/pc/weixin_hongyang.jpg" style="width: 150px;height:150px;"/>
+	            <ul style="font-size: 14px;">
+	            		<li>扫码关注公众号</li>
+	            		<li style="margin-top: 12px;">发送“<span style="color: red;">我爱安卓</span>”</li>
+	            </ul>
+	            <input type="text" name="wxcode" placeholder="输入返回的验证码" style="font-size:14px;height: 20px;line-height: 20px;margin-top: 12px;border: 1px solid #adadad;margin-bottom: 12px;"/>
+	        		<p style="font-size: 12px;color:#666;">若你登陆，将永久解锁；<br/>若未登录，仅本机解锁。</p>
+	        		<p class="warn" style="color: red;display: none;font-size: 14px;"></p>
+	        		<p class="opt_p">
+	                <span class="btn save" style="width: 80%;font-size: 16px;line-height: 36px;height: 36px;">解锁回答区域</span>
+	            </p>
+            </div>
+</div>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("#wxDialog").harameDialog({
+	    closedOnClickOverlay: false,
+	    closedSelector: ".closed, .btn.disabled"
+	});
+	
+	$("#wxDialog .save").click(function(){
+		var $dom = $("#wxDialog");
+		var wxcode = $.trim($dom.find("input[name='wxcode']").val());
+		if(wxcode == ""){
+			$dom.find(".warn").show();
+       	  	$dom.find(".warn").html("验证码不能为空");
+       	  	return;
+		}
+		$.ajax({
+	          url: basepath+"auth/wenda",
+	          type:"get",
+	          data:{wxcode: wxcode},
+	          success: function (results) {
+	              if(0 != results.errorCode){
+	            	  	  $dom.find(".warn").show();
+		            	  $dom.find(".warn").html(results.errorMsg);
+		            	  $dom.find("input[name='wxcode']").val("")
+		            	return;
+		          }
+	              localStorage.setItem("wanandroid.wenda.comments", 1);
+	              location.reload();      
+	          }, 
+	          error:function(){
+	        	    $dom.find(".warn").show();
+	        	  	$dom.find(".warn").html("网络异常");
+	          }
+	      });
+		
+	});
+	
+});
+</script>
+
+
+<script type="text/javascript">
+function activenav(id){
+    $("#"+ id).addClass("active");
+}
+
+function showLoginDialog(){
+	$("#loginDialog").harameDialog("open");
+	$("#loginDialog input[name='username']").focus();
+}
+
+function showWxDialog(){
+	$("#wxDialog").harameDialog("open");
+}
+function showRegisterDialog(){
+	$("#registerDialog").harameDialog("open");
+	$("#registerDialog input[name='username']").focus();
+}
+$(document).ready(function(){
+	$(".userNav span").mouseenter(function(){
+		$(this).parents(".userNav").find("div").show();
+	});
+	$(".userNav").mouseleave(function(){
+		$(this).find("div").hide();
+	});
+	$("form[name='searchForm']").find(".search").click(function(){
+		var k = $.trim($("form[name='searchForm']").find("input").val());
+		console.log(k);
+		if(k == "关闭新年皮肤"){
+			localStorage.setItem("wanandroid.index.close_newyear",1)
+			location.reload();
+			return false;
+		}
+		if(k == "打开新年皮肤"){
+			localStorage.setItem("wanandroid.index.close_newyear",0)
+			location.reload();
+			return false;
+		}
+		
+		if(0 < k.length){
+			if(100 < k.length){
+				k = k.substring(0,100);
+				$("form[name='searchForm']").find("input").val(k)
+			}
+			$("form[name='searchForm']").submit();
+		}
+	});
+	$("form[name='searchForm']").find("input").focus(function(){
+		$(this).parent("form").addClass("active");
+	}).blur(function(){
+	 	$(this).parent("form").removeClass("active");
+	 });
+	
+});
+</script>
+    <div class="e_container mt30"><!-- 内容主体 -->
+        <div class="main_content_l"><!-- 左侧文档列表-->
+        		<div class="block">
+	            <h2 class="title"><span class="title_content">收藏博文</span><span class="btn addCollect" onclick="showCollectDialog()">添加收藏</span></h2>
+	            <ul class="list_article listArticle">
+	            		
+	            </ul>
+	            
+	            
+	            		<div class="nothing">
+	            			<p>暂无收藏~~</p>
+	            		</div>
+	            
+        		</div>
+        </div>
+        <div class="fixed_content_r fixedBlock"><!-- 右侧常用 -->
+        		<div class="block">
+        			<h2 class="title">
+        				<span class="title_content">常用网站</span>
+        				<span class="btn editLink">编辑</span>
+        				<span class="btn addLink" onclick="showLinkDialog()">添加网站</span>
+        			</h2>
+	            <ul class="link_list linkList">
+	            		
+	            </ul>
+        		</div>
+        </div>
+    </div>
+    <!-- footer -->
+    
+
+<div class="footer">
+	<p class="mt10">&copy;2020&nbsp;·&nbsp;wanandroid.com&nbsp;·&nbsp;All Rights Reserved.&nbsp;
+		<a target="_blank" href="http://www.beian.miit.gov.cn/">皖ICP备17022096号</a>&nbsp;
+	</p>
+	<p>
+		<a href="/about">关于我们</a>·&nbsp;
+		本站CDN/存储服务由&nbsp;<a href="https://www.upyun.com/" target="_blank"><img alt="又拍云" src="/resources/image/sponsors/youpaiyun_logo.png" height="30px"></a>&nbsp;提供
+	</p>
+</div>
+<div class="gotop" role="button" aria-label="返回顶部"></div>
+<script type="text/javascript">
+function gotop(){
+	$('html,body').animate({scrollTop:'0px'},500);
+}
+$(document).ready(function(){
+	$(window).scroll(function(){		
+		if($(window).scrollTop() >= 100){
+			$('.gotop, #optFixed').fadeIn(300);
+		}else{
+			$('.gotop, #optFixed').fadeOut(300);
+		}
+	});
+	$(".gotop").click(gotop);
+});
+</script>
+
+
+</div>
+
+
+<div class="dialog_div collect_dialog" id="addCollectDialog">
+    <h2 class="title"><span>新增收藏</span><b class="closed"></b></h2>
+    <div>
+        <input class="normal_input" type="text" name="title" placeholder="*请输入标题" />
+        <input class="normal_input" type="text" name="author" placeholder="请输入作者" />
+        <textarea class="normal_textarea" name="link" placeholder="*请输入链接地址"></textarea>
+        <p class="warn"></p>
+         <p class="opt_p">
+        		<span class="fl btn disabled">取消</span>
+        		<span class="fr btn save">保存</span>
+        	</p>
+    </div>
+</div>
+
+<div class="dialog_div collect_dialog" id="addLinkDialog">
+    <h2 class="title"><span>新增网站</span><b class="closed"></b></h2>
+    <div>
+        <input class="normal_input" type="text" name="name" placeholder="请输入网站名称" />
+        <textarea class="normal_textarea" name="link" placeholder="请输入链接地址"></textarea>
+        <p class="warn"></p>
+        <p class="opt_p">
+        		<span class="fl btn disabled">取消</span>
+        		<span class="fr btn save">保存</span>
+        	</p>
+    </div>
+</div>
+<div class="dialog_div" id="deleteCollectDialog">
+    <h2 class="title"><span>取消收藏</span><b class="closed"></b></h2>
+    <div>
+    		<input type="hidden" name="aid" />
+    		<input type="hidden" name="originId" />
+        <p class="confirm">确认取消该收藏<span></span></p>
+        <p class="warn"></p>
+        <p class="opt_p">
+        		<span class="fl btn disabled">取消</span>
+        		<span class="fr btn save">确定</span>
+        	</p>
+    </div>
+</div>
+
+<div class="dialog_div" id="deleteLinkDialog">
+    <h2 class="title"><span>删除网站</span><b class="closed"></b></h2>
+    <div>
+    		<input type="hidden" name="linkid" />
+        <p class="confirm">确认删除<span></span></p>
+        <p class="warn"></p>
+        <p class="opt_p">
+        		<span class="fl btn disabled">取消</span>
+        		<span class="fr btn save">确定</span>
+        	</p>
+    </div>
+</div>
+<div class="dialog_div" id="editLinkDialog">
+    <h2 class="title"><span>编辑</span><b class="closed"></b></h2>
+    <div>
+        <input type="hidden" name="linkid" />
+        <input class="normal_input" type="text" name="linkname" />
+        <textarea class="normal_textarea" name="link"></textarea>
+        <p class="warn"></p>
+        <p class="opt_p">
+        		<span class="fl btn disabled">取消</span>
+        		<span class="fr btn save">保存</span>
+        	</p>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("#addCollectDialog, #addLinkDialog, #deleteCollectDialog, #deleteLinkDialog, #editLinkDialog").harameDialog({
+	    closedOnClickOverlay: false,
+	    closedSelector: ".closed, .btn.disabled"
+	});
+	
+	$("#addCollectDialog .save").click(function(){
+		var $dom = $("#addCollectDialog");
+		var title = $.trim($dom.find("input[name='title']").val());
+		var author = $.trim($dom.find("input[name='author']").val());
+		var link = $.trim($dom.find("textarea[name='link']").val());
+		if(1 > title.length){
+			$dom.find(".warn").html("请输入文章标题");
+			return false;
+		}
+		if(100 < title.length){
+			$dom.find(".warn").html("文章标题不超过100字");
+			return false;
+		}
+		if(0 < author.length && 50 < author.length){
+			$dom.find(".warn").html("作者名称不超过50字"+author.length);
+			return false;
+		}
+		if(1 > link.length){
+			$dom.find(".warn").html("请输入文章链接");
+			return false;
+		}
+		if(300 < link.length){
+			$dom.find(".warn").html("文章链接不超过300字");
+			return false;
+		}
+		$.ajax({
+	          url: basepath+"lg/collect/add/json",
+	          type:"post",
+	          data:{
+		        	  title: title,
+		        	  author: author,
+		        	  link: link
+	          		},
+	          success: function (results) {
+	              if(0 != results.errorCode){
+	            	  	$dom.find(".warn").html(results.errorMsg);
+	            		return;
+	              }
+	              $dom.harameDialog("close");
+	              $(".nothing").hide();
+	              var artdom = '<li><div><div class="info_art"><p>';
+	              if("http" == results.data.link.substring(0,4)){
+	            	 	artdom += '<a target="_blank" href="'+results.data.link+'">'+results.data.title+'</a>';
+	              }else{
+	            	  	artdom += '<a target="_blank" href="http://'+results.data.link+'">'+results.data.title+'</a>';
+	              }
+	              artdom += '</p>';
+	              if(results.data.author.length > 0){
+	            	  	artdom += '<span>作者：'+results.data.author+'</span>';
+	              }
+	              artdom += '<span>收藏时间：'+results.data.niceDate+'</span></div><div class="info_opt"><span artid="'+results.data.id+'" originId="'+results.data.originId+'" class="uncollect" title="取消收藏">取消收藏</span></div></div></li>';
+	              $(".listArticle").prepend(artdom);
+	              showAlertMsg("保存成功");
+	          },
+	          error:function(){
+	        	  	$dom.find(".warn").html("网络异常");
+	          }
+	      });
+		
+	});
+	
+	$("#addLinkDialog .save").click(function(){
+		var $dom = $("#addLinkDialog");
+		var name = $.trim($dom.find("input[name='name']").val());
+		var link = $.trim($dom.find("textarea[name='link']").val());
+		if(1 > name.length){
+			$dom.find(".warn").html("请输入网站名称");
+			return false;
+		}
+		if(50 < name.length){
+			$dom.find(".warn").html("网站名称不超过50字");
+			return false;
+		}
+		if(1 > link.length){
+			$dom.find(".warn").html("请输入网站链接");
+			return false;
+		}
+		if(300 < link.length){
+			$dom.find(".warn").html("网站链接不超过300字");
+			return false;
+		}
+		$.ajax({
+	          url: basepath+"lg/collect/addtool/json",
+	          type:"post",
+	          data:{
+		        	  name: name,
+		        	  link: link
+	          		},
+	          success: function (results) {
+	              if(0 != results.errorCode){
+	            	  	$dom.find(".warn").html(results.errorMsg);
+	            		return;
+	              }
+	              $dom.harameDialog("close");
+	              var linkdom = '<li>';
+	              if("http" == link.substring(0,4)){
+	            	  	linkdom += '<a href="'+results.data.link+'" link="'+results.data.link+'" target="_blank">'+results.data.name+'</a>';
+	              }else{
+	            	  	linkdom += '<a href="http://'+results.data.link+'" link="'+results.data.link+'" target="_blank">'+results.data.name+'</a>';
+	              }
+	              linkdom += '<span linkid="'+results.data.id+'" class="delete" style="display:none" title="删除"></span><span linkid="'+results.data.id+'" class="edit" style="display:none" title="编辑"></span></li>';
+	              $(".linkList").append(linkdom);
+	              showAlertMsg("保存成功");
+	          },
+	          error:function(){
+	        	  	$dom.find(".warn").html("网络异常");
+	          }
+	      });
+	});
+	$("#deleteCollectDialog .save").click(function(){
+		var $dom = $("#deleteCollectDialog");
+		var artid = $.trim($dom.find("input[name='aid']").val());
+		var originId = $.trim($dom.find("input[name='originId']").val());
+
+		if(1 > artid){
+			$dom.find(".warn").html("获取收藏失败，请重试");
+			return false;
+		}
+		
+		$.ajax({
+	          url: basepath+"lg/uncollect/"+artid+"/json",
+	          type:"post",
+	          data:{"originId":originId},
+	          success: function (results) {
+	              if(0 != results.errorCode){
+	            	  	$dom.find(".warn").html(results.errorMsg);
+	            		return;
+	              }
+	              $dom.harameDialog("close");
+	              $dom.find(".warn").html("");
+	              $(".uncollect[artid='"+artid+"']").parents("li").remove();
+	              showAlertMsg("删除收藏成功");
+	          },
+	          error:function(){
+	        	  	$dom.find(".warn").html("网络异常");
+	          }
+	      });
+	});
+	$("#deleteLinkDialog .save").click(function(){
+		var $dom = $("#deleteLinkDialog");
+		var linkid = $.trim($dom.find("input[name='linkid']").val());
+		if(1 > linkid){
+			$dom.find(".warn").html("获取网站失败，请重试");
+			return false;
+		}
+		$.ajax({
+	          url: basepath+"lg/collect/deletetool/json",
+	          type:"post",
+	          data:{
+		        	  id: linkid
+          		},
+	          success: function (results) {
+	              if(0 != results.errorCode){
+	            	  	$dom.find(".warn").html(results.errorMsg);
+	            		return;
+	              }
+	              $dom.harameDialog("close");
+	              $dom.find(".warn").html("");
+	              $(".delete[linkid='"+linkid+"']").closest("li").remove();
+	              showAlertMsg("删除网站成功");
+	          },
+	          error:function(){
+	        	  	$dom.find(".warn").html("网络异常");
+	          }
+	      });
+	});
+	$("#editLinkDialog .save").click(function(){
+		var $dom = $("#editLinkDialog");
+		var linkid = $.trim($dom.find("input[name='linkid']").val());
+		var linkname = $.trim($dom.find("input[name='linkname']").val());
+		var link = $.trim($dom.find("textarea[name='link']").val());
+		if(1 > linkid){
+			$dom.find(".warn").html("网站获取失败，请重试");
+			return false;
+		}
+		if(1 > linkname.length){
+			$dom.find(".warn").html("请输入网站名称");
+			return false;
+		}
+		if(1 > link.length){
+			$dom.find(".warn").html("请输入网站链接");
+			return false;
+		}
+		$.ajax({
+	          url: basepath+"lg/collect/updatetool/json",
+	          type:"post",
+	          data:{
+		        	  id: linkid,
+		        	  name: linkname,
+		        	  link: link
+	          		},
+	          success: function (results) {
+	              if(0 != results.errorCode){
+	            	  	$dom.find(".warn").html(results.errorMsg);
+	            		return;
+	              }
+	              $dom.harameDialog("close");
+	              $(".edit[linkid='"+linkid+"']").closest("li").find("a").html(linkname);
+	              if("http" == link.substring(0,4)){
+	            	  	$(".edit[linkid='"+linkid+"']").closest("li").find("a").attr({"href":link,"link":link});
+	              }else{
+	            	  	$(".edit[linkid='"+linkid+"']").closest("li").find("a").attr({"href":"http://"+link,"link":link});
+	              }
+	              
+	              showAlertMsg("修改成功");
+	          },
+	          error:function(){
+	        	  	$dom.find(".warn").html("网络异常");
+	          }
+	      });
+		
+	});
+	
+});
+</script>
+<div id="alertMsg"></div>
+<script type="text/javascript">
+activenav("collect");
+
+/* function fixedBlock(top){
+	var scrollTop = $(window).scrollTop();
+	if(top >= scrollTop){
+		$(".fixedBlock").removeClass("fixed_block");
+	}else if(top < scrollTop){
+    		var left = $(".fixedBlock").offset().left; 
+        $(".fixedBlock").addClass("fixed_block");
+    		$(".fixedBlock").css("left",left);
+    } 
+} */
+
+
+window.onscroll = function(){
+    //fixedBlock(100);//悬停块
+};
+function showCollectDialog(){
+	$("#addCollectDialog").find("input").val("");
+	$("#addCollectDialog").find("textarea").val("");
+	$("#addCollectDialog").find(".warn").val("");
+	$("#addCollectDialog").harameDialog("open");
+}
+function showLinkDialog(){
+	$("#addLinkDialog").find("input").val("");
+	$("#addLinkDialog").find("textarea").val("");
+	$("#addLinkDialog").find(".warn").val("");
+	$("#addLinkDialog").harameDialog("open");
+}
+
+
+$(document).ready(function(){
+	getColor("one",$(".linkList li a"), "color");
+	
+	$(".listArticle").on("click", ".uncollect", function(){
+		$("#deleteCollectDialog").find("input[name='aid']").val($(this).attr("artid"));
+		$("#deleteCollectDialog").find("input[name='originId']").val($(this).attr("originId"));
+		$("#deleteCollectDialog").harameDialog("open");
+	});
+	$(".linkList").on("click", ".delete", function(){
+		$("#deleteLinkDialog").find(".warn").html("");
+		$("#deleteLinkDialog").find(".confirm").html("确定删除'"+$(this).parent("li").find("a").html()+"'");
+		$("#deleteLinkDialog").find("input[name='linkid']").val($(this).attr("linkid"));
+		$("#deleteLinkDialog").harameDialog("open");
+	});
+	$(".linkList").on("click", ".edit", function(){
+		$("#editLinkDialog").find("input[name='linkid']").val($(this).attr("linkid"));
+		$("#editLinkDialog").find("input[name='linkname']").val($(this).parent("li").find("a").html());
+		$("#editLinkDialog").find("textarea[name='link']").val($(this).parent("li").find("a").attr("link"));
+		$("#editLinkDialog").harameDialog("open");
+	});
+	
+	$(".editLink").click(function(){
+		if(!$(this).hasClass("active")){
+			$(this).addClass("active");
+			$(this).html("完成");
+			$(this).next(".addLink").hide();
+			$(".linkList li span").show();
+		}else{
+			$(this).removeClass("active");
+			$(this).html("编辑");
+			$(this).next(".addLink").show();
+			$(".linkList li span").hide();
+		}
+	});
+});
+</script>
+</body>
+</html>

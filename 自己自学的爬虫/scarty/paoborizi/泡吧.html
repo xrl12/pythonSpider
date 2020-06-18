@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>综合资讯 - 泡在网上的日子</title>
+<meta name="keywords" content="互联网资讯,产品设计,产品运营,产品经理,交互设计,互联网的那点事,互联网,移动互联网,创业,产品资料"/>
+<meta name="description" content="提供专业的产品资讯文档，以及产品设计、策划、运营、交互设计、用户体验、电子商务信息、互联网创业信息、移动互联网等专业信息服务"/>
+<link href="../templets/jcodecraeer/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../templets/jcodecraeer/css/new.css" rel="stylesheet" type="text/css">
+<script src="../templets/jcodecraeer/js/jquery-1.11.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="../include/myajax.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('login_info');
+	  myajax = new MyAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+</head>
+<body>
+<div class="header">  
+	<div class="headercon container clearfix">
+        <div class="row">
+            <div class="col-md-12">
+            	<!-- 导航部分 -->
+                <a class="logo-t" href="/"><img src="../templets/jcodecraeer/images/logo.png">泡在网上的日子</a>
+                <ul class="nav-ul">
+                	<li id="nav-index"><a href="/">首页</a></li>
+                    <li id="nav-code"><a href="../plus/list_tid_31.html">代码</a></li>
+                    <li id="nav-feed"><a class="" href="../plus/freelist_lid_12.html">话题</a></li>
+                    <li id="nav-ask"><a class="" href="../hao.html">导航</a></li>
+                    <li id="nav-ask"><a class="" href="/">问答</a></li>
+                    <li><a href="../about.html" class="">关于</a></li>
+                </ul>
+                <!-- 导航部分 end -->
+                <!-- 搜索-下拉 -->
+                <div class="header_right">
+                    <a href="../appdown.html" class="lg_app">APP</a>
+                	<div class="search_start">
+                         <div class="search_cont">
+                            <form action="/" method="get">
+                            	<input type="hidden" name="kwtype" value="0"/>
+                                <input type="text" name="q" class="in_search" autocomplete="off" value="搜索"/>
+                                <input type="submit" class="in_submit"/>
+        						<span class="glyphicon glyphicon-search icon-search"></span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 消息下拉 -->
+                    <div class="header_right_msg z">  
+                        <!-- 登录 -->
+                        <div class="right_login" id="login_info">
+                            <a class="l" href="../member/login.html">登录</a>
+                            <a href="../member/reg_new.html">注册</a>
+                        </div>
+                        <!-- 登录 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript">CheckLogin();</script>
+<script language="javascript" type="text/javascript">
+  $(function(){
+	$(".in_search").click(function(){
+		$(".search_cont").addClass('ser').animate({
+			width:200,
+		},200);
+		if($(this).val() == '搜索'){
+			$(".in_search").val('');
+		}
+	})
+	$(".in_search").blur(function(){
+		if($(this).val() !== ''){
+			return false;
+		}
+		$(".search_cont").removeClass('ser').animate({
+			width:90,
+		},200);
+		$(".in_search").val('搜索');
+	});
+});
+</script>
+<div class="nav" id="navMenu">   
+	<div class="container">  
+		<ul id="nav">
+		<!-- all -->
+			<li><a href="../plus/list_tid_4.html" rel="dropmenu4"><span>综合资讯</span></a></li>
+			<li><a href="../plus/list_tid_6.html" rel="dropmenu6"><span>程序设计</span></a></li>
+			<li><a href="../plus/list_tid_16.html" rel="dropmenu16"><span>安卓开发</span></a></li>
+			<li><a href="../plus/list_tid_5.html" rel="dropmenu5"><span>前端开发</span></a></li>
+			<li><a href="../plus/list_tid_27.html" rel="dropmenu27"><span>IOS开发</span></a></li>
+			<li><a href="../plus/list_tid_14.html"><span>数据库</span></a></li>
+			<li><a href="../plus/list_tid_15.html"><span>开发日志</span></a></li>
+			<li><a href="../plus/list_tid_32.html" rel="dropmenu32"><span>应用推荐</span></a></li>
+			<li><a href="../plus/list_tid_9.html"><span>每日一站</span></a></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="../images/js/dropdown.js"></script>
+<div class="drop" id="dropmenu4">
+                    <ul>
+                      <li>
+                        <a href="../plus/list_tid_8.html" id="architecture">IT业界</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_21.html" id="architecture">移动互联</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_22.html" id="architecture">社交网络</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_24.html" id="architecture">电子商务</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_17.html" id="architecture">安卓资讯</a>
+                      </li>
+                    </ul>
+  </div><div class="drop" id="dropmenu6">
+                    <ul>
+                      <li>
+                        <a href="../plus/list_tid_2.html" id="architecture">php</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_7.html" id="architecture">java</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_12.html" id="architecture">程序员</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_20.html" id="architecture">设计模式|算法</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_23.html" id="architecture">Scala语言</a>
+                      </li>
+                    </ul>
+  </div><div class="drop" id="dropmenu16">
+                    <ul>
+                      <li>
+                        <a href="../plus/list_tid_18.html" id="architecture">android开发</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_25.html" id="architecture">android官方课程</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_33.html" id="architecture">Android Studio</a>
+                      </li>
+                      <li>
+                        <a href="../a/androidweekly.html" id="architecture">Android开发周报</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_36.html" id="architecture">android初级教程</a>
+                      </li>
+                    </ul>
+  </div><div class="drop" id="dropmenu5">
+                    <ul>
+                      <li>
+                        <a href="../plus/list_tid_1.html" id="architecture">JavaScript</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_3.html" id="architecture">CSS教程</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_28.html" id="architecture">jQuery Mobile</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_10.html" id="architecture">web设计</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_19.html" id="architecture">EXT JS开发框架</a>
+                      </li>
+                      <li>
+                        <a href="../plus/list_tid_26.html" id="architecture">HTML5/CSS3</a>
+                      </li>
+                      <li>
+                        <a href="../a/react.html" id="architecture">React</a>
+                      </li>
+                    </ul>
+  </div><div class="drop" id="dropmenu27">
+                    <ul>
+                      <li>
+                        <a href="../plus/list_tid_30.html" id="architecture">文章教程</a>
+                      </li>
+                    </ul>
+  </div><div class="drop" id="dropmenu14">
+                    <ul>
+                    </ul>
+  </div><div class="drop" id="dropmenu15">
+                    <ul>
+                    </ul>
+  </div><div class="drop" id="dropmenu32">
+                    <ul>
+                      <li>
+                        <a href="../plus/list_tid_34.html" id="architecture">插件</a>
+                      </li>
+                    </ul>
+  </div><div class="drop" id="dropmenu9">
+                    <ul>
+                    </ul>
+  </div>
+<script type="text/javascript">cssdropdown.startchrome("navMenu")</script>  
+<div class="container">
+	<div class="row bgf" style="padding-top:5px;">
+		<div class="col-md-12">
+			<script src="../plus/fuckblok_aid_36.js" language="javascript"></script>
+		</div>
+	</div>
+	<div class="row bgf">
+    	<div class="col-md-9">  
+			<ul class="archive-list">
+				<li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/1023/8634.html" title="谷歌将为找到顶级app漏洞的黑客提供悬赏">
+                    	<div class="covercon"> <img src="../uploads/20171023/1508754168531485-lp.png" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/1023/8634.html" title="谷歌将为找到顶级app漏洞的黑客提供悬赏">谷歌将为找到顶级app漏洞的黑客提供悬赏</a></h3>
+							<p>谷歌似乎希望通过启动一个新的 bug 悬赏项目来提高 Play store 中 app 的质量。这次悬赏不同于之前的那个旧项目，旧项目主要主要针对查找网站和操作系统上的bug，而这次主要是希望黑客寻找排名最高的第三方app中的漏洞。黑客直接把漏洞提交给开发者，并和他 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/黑客/' class='tag'>黑客</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">1707</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">0</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-10-23</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/0906/8478.html" title="Google和Udacity为75000名有抱负的开发人员提供奖学金">
+                    	<div class="covercon"> <img src="../uploads/allimg/170906/110K91457-0-lp.png" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/0906/8478.html" title="Google和Udacity为75000名有抱负的开发人员提供奖学金">Google和Udacity为75000名有抱负的开发人员提供奖学金</a></h3>
+							<p>Google宣布计划扩大与Udacity的合作伙伴关系，为寻求和追求程序开发职业生涯的开发人员提供75000笔Android奖学金。 根据该计划，Google与Udacity已经进行为期两年的长期合作，分别在2015年和2016年为热情的新手编程者提供1000和10000笔奖学金。德国媒体巨头 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/奖学金/' class='tag'>奖学金</a>,<a href='/tags.php?/Udacity/' class='tag'>Udacity</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">1201</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">1</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-09-06</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/0831/8452.html" title="Android O添加了一个 Splash Screen API帮助简化启动屏制作">
+                    	<div class="covercon"> <img src="../uploads/allimg/170831/1-1FS11635240-L.png" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/0831/8452.html" title="Android O添加了一个 Splash Screen API帮助简化启动屏制作">Android O添加了一个 Splash Screen API帮助简化启动屏制作</a></h3>
+							<p>大多数开发者对闪屏（splash screen）都持不同的态度。一些人支持用闪屏隐藏app的加载，然后自然过渡到主界面，而另一些人认为闪屏不管是对用户还是开发者都是浪费时间。谷歌在这个问题上的立场也是不一的，以前不推荐使用闪屏的使用，但是后来在很多app上都 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/Splash Screen/' class='tag'>Splash Screen</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">8609</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">1</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">6</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-08-31</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/0822/8404.html" title="Android 8.0 Oreo 正式亮相：各大厂商表示年底前跟进">
+                    	<div class="covercon"> <img src="../uploads/20170822/1503367678124925-lp.jpg" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/0822/8404.html" title="Android 8.0 Oreo 正式亮相：各大厂商表示年底前跟进">Android 8.0 Oreo 正式亮相：各大厂商表示年底前跟进</a></h3>
+							<p>在经历四个开发者预览版的数月测试之后，Google 于今天正式命名 Android 8.0 操作系统更新为“Oreo”。 通过 Android Beta 项目渠道，Google 于今天公布了 Oreo 的系统镜像，感兴趣的尝鲜者可前往下载。Google 同时也表示在“接下来数周时间”内为 Nexus 和 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/Android 8.0/' class='tag'>Android 8.0</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">3698</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">1</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-08-22</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/wangzhantuijian/waiwenfanyi/2017/0617/8086.html" title="《Minecraft》的画素风格在上了4K 之后变得截然不同了...">
+                    	<div class="covercon"> <img src="../uploads/20170617/1497631515736402-lp.png" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/wangzhantuijian/waiwenfanyi/2017/0617/8086.html" title="《Minecraft》的画素风格在上了4K 之后变得截然不同了...">《Minecraft》的画素风格在上了4K 之后变得截然不同了...</a></h3>
+							<p>当我们看到《 Minecraft 》出现在 微软Xbox One X的免费4K升级包阵容之中 时，想必大家心里也有同样的问号.jpg。毕竟一款主打像素风格的有趣游戏，升级到更高画质到底会是个什么样的概念？但在这次E3 2017微软另外像我们所提供的展示中，才发现，《Minecraft </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/Minecraft/' class='tag'>Minecraft</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">3802</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">1</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">0</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-06-17</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/wangzhantuijian/waiwenfanyi/2017/0617/8085.html" title="从千亿市值到45亿被收购 雅虎退出历史舞台">
+                    	<div class="covercon"> <img src="../uploads/allimg/170617/0034223963-0-lp.jpg" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/wangzhantuijian/waiwenfanyi/2017/0617/8085.html" title="从千亿市值到45亿被收购 雅虎退出历史舞台">从千亿市值到45亿被收购 雅虎退出历史舞台</a></h3>
+							<p>据悉，雅虎财经、搜索引擎、网络广告工具和网络服务等核心业务将与威瑞森通信拥有的美国在线（AOL）旗下约50家媒体和科技品牌组成一个新的数字媒体公司Oath，由美国在线前首席执行官阿姆斯壮统领。此外，雅虎未出售给威瑞森通信的剩余资产包括阿里巴巴15%股 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/雅虎/' class='tag'>雅虎</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">2626</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">0</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-06-17</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/wangzhantuijian/waiwenfanyi/2017/0617/8084.html" title="NSA 认为勒索软件 WannaCry 与朝鲜有关联">
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/wangzhantuijian/waiwenfanyi/2017/0617/8084.html" title="NSA 认为勒索软件 WannaCry 与朝鲜有关联">NSA 认为勒索软件 WannaCry 与朝鲜有关联</a></h3>
+							<p>据外媒报道，美国国家安全局表示朝鲜是WannaCry恶意勒索软件攻击事件的幕后黑手。 上个月席卷全球的WannaCry恶意勒索软件攻击事件至少让150个国家的企业、医院和政府机构中招。据 《华盛顿邮报》报道 ，NSA认为名为WannaCry的恶意软件来自受朝鲜情报机关赞助 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/勒索软件/' class='tag'>勒索软件</a>,<a href='/tags.php?/病毒/' class='tag'>病毒</a>,<a href='/tags.php?/NSA/' class='tag'>NSA</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">682</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">0</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-06-17</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/0605/8037.html" title="工信部放大招：将统一 Android 消息推送标准">
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/0605/8037.html" title="工信部放大招：将统一 Android 消息推送标准">工信部放大招：将统一 Android 消息推送标准</a></h3>
+							<p>由于一些特殊的原因，在国内的用户无法享受到谷歌安卓系统提供的 GMS 消息推送服务，不少国产安卓软件接收消息依靠后台服务存在，也由此出现了用户反映的耗电以及占用内存问题，不过未来这一问题有望得到全面解决。 据工信部旗下泰尔终端实验室发布消息称， </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/推送/' class='tag'>推送</a>,<a href='/tags.php?/工信部/' class='tag'>工信部</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">4501</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">3</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">4</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-06-05</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/0531/8024.html" title="Android之父发布Essential智能手机">
+                    	<div class="covercon"> <img src="../uploads/allimg/170531/1_05310935361S3.jpg" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/0531/8024.html" title="Android之父发布Essential智能手机">Android之父发布Essential智能手机</a></h3>
+							<p>在经过几个月的爆料和玩味之后，Android之父Andy Rubin终于揭晓了新公司的首款智能手机Essential Phone，Essential Phone有着顶级的配置和先进的工艺设计，毫无妥协。 Essential Phone采用了顶部和左右两侧超窄边框的全面屏设计，由钛材和陶瓷制成，机身框架 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/Essential/' class='tag'>Essential</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">2643</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">2</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">0</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-05-31</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/wangzhantuijian/waiwenfanyi/2017/0523/7968.html" title="Java 之父 James Gosling 宣布加入亚马逊 AWS">
+                    	<div class="covercon"> <img src="../uploads/20170523/1495549009281427-lp.jpg" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/wangzhantuijian/waiwenfanyi/2017/0523/7968.html" title="Java 之父 James Gosling 宣布加入亚马逊 AWS">Java 之父 James Gosling 宣布加入亚马逊 AWS</a></h3>
+							<p>著名计算机科学家、Java 之父 James Gosling 宣布 加盟亚马逊 AWS 服务，成为云计算巨头的杰出工程师。James Gosling 也在其 Facebook 主页上确认了这一消息。 亚马逊证实 Gosling 已加入了公司，但没有对他将要做的工作提出任何进一步的说明。尽管目前尚不 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/Java 之父/' class='tag'>Java 之父</a>,<a href='/tags.php?/亚马逊/' class='tag'>亚马逊</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">2101</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">2</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-05-23</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/0515/7947.html" title="绿色守护作者发起Android 绿色应用公约">
+                    	<div class="covercon"> <img src="../uploads/170515/1-1F5151TG3334.png" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/0515/7947.html" title="绿色守护作者发起Android 绿色应用公约">绿色守护作者发起Android 绿色应用公约</a></h3>
+							<p>安卓最大的问题，不是系统本身，而是第三方app毫无节制的消耗系统资源。比如无休止的唤醒，各种不必要的通知等。而往往规模越大的公司，在这方面做得越差，这些应用往往属于必备应用，导致装完这些应用之后，几乎无法在保证流畅性的前提下继续安装其它应用了 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/绿色守护/' class='tag'>绿色守护</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">1727</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">2</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">6</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-05-15</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/0515/7945.html" title="Google 推出新的 Android 系统更新方案，碎片化问题有救了？">
+                    	<div class="covercon"> <img src="../uploads/allimg/170515/1-1F5151403080-L.png" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/0515/7945.html" title="Google 推出新的 Android 系统更新方案，碎片化问题有救了？">Google 推出新的 Android 系统更新方案，碎片化问题有救了？</a></h3>
+							<p>Android 已经是世界上第一大移动设备操作系统，但对于很多 Android 手机用户来说，他们手上的“第一大”操作系统，却并不是最新版本的，用户在抱怨得不到更新，Android 的所有者 Google 当然也在发愁。 （图自： Android ） 根据 Google 官方最新的统计显示 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/Google/' class='tag'>Google</a>,<a href='/tags.php?/系统/' class='tag'>系统</a>,<a href='/tags.php?/更新/' class='tag'>更新</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">1602</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">1</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-05-15</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/wangzhantuijian/waiwenfanyi/2017/0511/7937.html" title="Windows 商店封杀 Chrome 和 Firefox 等第三方浏览器">
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/wangzhantuijian/waiwenfanyi/2017/0511/7937.html" title="Windows 商店封杀 Chrome 和 Firefox 等第三方浏览器">Windows 商店封杀 Chrome 和 Firefox 等第三方浏览器</a></h3>
+							<p>微软上周正式宣布Windows 10 S时，很多人都想知道Windows 10的这个版本是否真的是对消费者友好。 Windows 10 S绝对不是Windows RT，但是，Windows 10 S用户将不得不使用微软Edge和Bing作为其默认的浏览器和搜索引擎，我们不太可能看到Google Chrome或其他流 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/Windows/' class='tag'>Windows</a>,<a href='/tags.php?/封杀/' class='tag'>封杀</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">578</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">1</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">0</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-05-11</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/anzhuokaifa/anzhuozixun/2017/0510/7936.html" title="I/O大会2017即将到来，支持嵌入直播小部件">
+                    	<div class="covercon"> <img src="../uploads/20170510/1494395790116400-lp.png" class="cover imgloadinglater" style="display: block;"/> </div>				
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/anzhuokaifa/anzhuozixun/2017/0510/7936.html" title="I/O大会2017即将到来，支持嵌入直播小部件">I/O大会2017即将到来，支持嵌入直播小部件</a></h3>
+							<p>谷歌将于太平洋时间5月17日在加州山景城的海岸露天剧场举行为期三天的I/O大会。会议议程将在 https://events.google.com/io/ 上公布。 与往次大会不同的是，Google这次新增I/O Live Widget直播小部件，可以把小部件嵌入到你的个人网站/博客，让网站读者可以 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/I/O/' class='tag'>I/O</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">805</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">0</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-05-10</span>
+							</div>
+						</div>
+					</div>
+				</li><li class="archive-item clearfix">
+					<a href="../a/wangzhantuijian/waiwenfanyi/2017/0509/7929.html" title="谷歌“Fuchsia”操作系统抛弃 Linux：具有崭新的 UI">
+					</a>
+					<div class="archive-text">
+						<div class="archive-detail">
+							<h3><a href="../a/wangzhantuijian/waiwenfanyi/2017/0509/7929.html" title="谷歌“Fuchsia”操作系统抛弃 Linux：具有崭新的 UI">谷歌“Fuchsia”操作系统抛弃 Linux：具有崭新的 UI</a></h3>
+							<p>这个叫“ Fuchsia ”的智能手机操作系统，去年八月份首次出现在谷歌的 Git 代码库中。不过当时还只是一个命令行。现在这个神秘的项目有了一个全新的 UI，下面让我们看看它究竟长什么样。 与 Android 和 Chrome OS 不同，Fuchsia 不是基于 Linux 的 — 它使用 </p>
+							<div class="archive-info clearfix">
+								<ul>
+									<li class="list-user">
+										<a href="../member/index_uid_jianghejie.html" target="_blank">
+											<img src="../uploads/userup/1/myface.png">
+											<span>泡在网上的日子</span>
+										</a>
+									</li>
+									<!-- <li class="list-tag"><span><a href='/tags.php?/谷歌/' class='tag'>谷歌</a>,<a href='/tags.php?/Fuchsia/' class='tag'>Fuchsia</a>,<a href='/tags.php?/系统/' class='tag'>系统</a> </span></li> -->
+									<li class="list-msg">
+							            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							            <span class="glyphicon-class">1113</span>
+										<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          								<span class="glyphicon-class">0</span>							            
+										<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+										<span class="glyphicon-class">0</span>
+									</li>
+								</ul>
+							</div>
+							<div class="archive-data">
+					        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+ 								<span class="glyphicon-class">17-05-09</span>
+							</div>
+						</div>
+					</div>
+				</li>				
+			</ul>
+			<div class="paginate-container">
+				<div class="pagination">
+					<ul>
+						<li><a>首页</a></li>
+<li class="number thisclass"><a>1</a></li>
+<li class="number"><a href="../plus/list_tid_4_TotalResult_596_PageNo_2.html">2</a></li>
+<li class="number"><a href="../plus/list_tid_4_TotalResult_596_PageNo_3.html">3</a></li>
+<li class="number"><a href="../plus/list_tid_4_TotalResult_596_PageNo_4.html">4</a></li>
+<li class="number"><a href="../plus/list_tid_4_TotalResult_596_PageNo_5.html">5</a></li>
+<li class="number"><a href="../plus/list_tid_4_TotalResult_596_PageNo_6.html">6</a></li>
+<li class="number"><a href="../plus/list_tid_4_TotalResult_596_PageNo_7.html">7</a></li>
+<li><a href="../plus/list_tid_4_TotalResult_596_PageNo_2.html">下一页</a></li>
+<li><a href="../plus/list_tid_4_TotalResult_596_PageNo_40.html">末页</a></li>
+<li><span class="pageinfo">共 <strong>40</strong>页<strong>596</strong>条</span></li>
+					</ul>
+					<div style="float: none; clear: both;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="total">
+				596文
+			</div>
+<!-- 			<div class="sub-title">子栏目</div>
+			<ul class="sidearticle_c clearfix">                     
+						  <li><a href='/plus/list.php?tid=8'>IT业界</a></li>
+						  <li><a href='/plus/list.php?tid=21'>移动互联</a></li>
+						  <li><a href='/plus/list.php?tid=22'>社交网络</a></li>
+						  <li><a href='/plus/list.php?tid=24'>电子商务</a></li>
+						  <li><a href='/plus/list.php?tid=17'>安卓资讯</a></li>
+			</ul>	 -->			 
+             <div id="floatbox">  
+				<script src="../plus/fuckblok_aid_29.js" language="javascript"></script>	
+         	</div>
+		</div>	
+	</div> 	
+</div> 
+<script src="../templets/jcodecraeer/js/jcodecraeer.js"></script>
+<!-- 返回顶部 -->
+<div id="gotop" style="display:none"></div>
+<script type="text/javascript">
+	backTop=function (btnId){
+		var btn=document.getElementById(btnId);
+		var d=document.documentElement;
+		var b=document.body;
+		window.onscroll=set;
+		btn.onclick=function (){
+			btn.style.display="none";
+			window.onscroll=null;
+			this.timer=setInterval(function(){
+				d.scrollTop-=Math.ceil((d.scrollTop+b.scrollTop)*0.1);
+				b.scrollTop-=Math.ceil((d.scrollTop+b.scrollTop)*0.1);
+				if((d.scrollTop+b.scrollTop)==0) clearInterval(btn.timer,window.onscroll=set);
+			},10);
+		};
+		function set(){
+			btn.style.display=(d.scrollTop+b.scrollTop>100)?'block':"none";
+		}
+	};
+	backTop('gotop');
+	(new SidebarFollow()).init({
+		element: jQuery('#floatbox'),
+		distanceToTop: 0
+	});	
+</script>
+<!-- 返回顶部END -->
+<style>
+#gotop {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAANAgMAAACP9jv8AAAACVBMVEX///////8AAACO9MPsAAAAAXRSTlMAQObYZgAAAGhJREFUeF49zsEJwCAMBdBvoRfvWaJTOEIPZp+O4lEyZcn/RIl+SMJDAG2gTlfc7+k8H8Pm6cRiuFfjip3RphXUV4ghJIaQjVZQoCfkLDI7C7kgiAuRDK+YvJwLQnBPhovRw7ER5of3DyPbFp8RB9axAAAAAElFTkSuQmCC") no-repeat scroll 18px 21px #000000;
+    bottom: 200px;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    opacity: 0.5;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in 0s, opacity 0.3s ease-out 0s;
+     right: 10px;
+    position: fixed;
+    top: auto;
+    width: 60px;
+    z-index: 999;
+}
+</style>
+<div class="footer">
+	<div class="container">	
+		<div class="row clearfix">
+			<div class="col-md-12">
+				<div class="copyright z">
+					<p>Copyright  2011 - 2016 jcodecraeer.com All Rights Reversed.</p>
+					<p>蜀ICP备12021840号-1</p>
+					<p>本站文章用于学习交流</p>
+				</div>
+				<div class="footer-nav y">
+					<ul class="clearfix">
+						<li><script src="../plus/fuckblok_aid_51.js" language="javascript"></script></li>
+					</ul>					
+					<ul class="clearfix">
+						<li><a href="http://weibo.com/u/2711441293" target="_blank">新浪微博</a></li>
+						<li>qq群一161644793</li>
+						<li>qq群二98711210</li> 
+					</ul>
+					<ul class="clearfix">
+						<li><a href="index.html" target="_blank">网站地图</a></li>	
+						<li>				
+						<script type="text/javascript">
+						var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+						document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2f2ac530df20294f718580cea710780e' type='text/javascript'%3E%3C/script%3E"));
+						</script> 
+						</li>	 
+					</ul>			
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+</body>
+</html>
